@@ -108,4 +108,4 @@ El diseño de Raftec prioriza la **calidez y la empatía**.
 
 ---
 
-> Hecho con ❤️ y 🍊 por [Tu Nombre / Familia Alberto Lira] en honor a **Rafa**.
+> Hecho con ❤️ por Carlos Lira en honor a **Rafa**.
