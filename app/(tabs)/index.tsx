@@ -1,16 +1,14 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useRaftecStore } from '../../src/store/raftecStore';
+import { useAppSelector } from '../../src/store/hooks';
 import { GuerreroCard } from '../../src/components/molecules/GuerreroCard';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-// Mock data or assets
-// In real app use actual assets
-const PLACEHOLDER_AVATAR = { uri: 'https://via.placeholder.com/150' };
-
 export default function HomeScreen() {
-  const { name, level, energyPoints } = useRaftecStore();
+  const name = useAppSelector((s) => s.raftec.name);
+  const level = useAppSelector((s) => s.raftec.level);
+  const energyPoints = useAppSelector((s) => s.raftec.energyPoints);
 
   return (
     <SafeAreaView className="flex-1 bg-background" edges={['top']}>

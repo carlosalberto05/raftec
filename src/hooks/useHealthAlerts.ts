@@ -1,7 +1,7 @@
-import { useClinicalStore } from '../store/clinicalStore';
+import { useAppSelector } from '../store/hooks';
 
 export function useHealthAlerts() {
-    const metrics = useClinicalStore((state) => state.metrics);
+    const metrics = useAppSelector((state) => state.clinical.metrics);
     const alerts: { type: 'warning' | 'danger'; message: string }[] = [];
 
     Object.entries(metrics).forEach(([key, metric]) => {

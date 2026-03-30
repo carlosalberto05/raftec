@@ -1,13 +1,14 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useClinicalStore } from '../../src/store/clinicalStore';
+import { useAppSelector } from '../../src/store/hooks';
 import { MetricBadge } from '../../src/components/atoms/MetricBadge';
 import { HealthChart } from '../../src/components/organisms/HealthChart';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 export default function ClinicalScreen() {
-    const { metrics, trends } = useClinicalStore();
+    const metrics = useAppSelector((s) => s.clinical.metrics);
+    const trends = useAppSelector((s) => s.clinical.trends);
 
     return (
         <SafeAreaView className="flex-1 bg-background" edges={['top']}>
