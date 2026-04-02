@@ -21,8 +21,9 @@ module.exports = {
         card: "24px",
       },
       fontFamily: {
-        // user mentioned "modern typography", NativeWind links to system fonts by default or specific.
-        // I'll stick to default sans for now unless I add Google Fonts.
+        sans: ["PlusJakarta-Regular", "sans-serif"],
+        bold: ["PlusJakarta-Bold", "sans-serif"],
+        hero: ["LuckiestGuy", "cursive"],
       },
     },
   },

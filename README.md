@@ -56,11 +56,11 @@ La unión hace la fuerza.
 
 La aplicación ha sido construida siguiendo los más altos estándares de arquitectura móvil moderna (Senior Mobile Architecture):
 
-- **Framework**: [Expo SDK 54](https://expo.dev/) con **Expo Router** (navegación basada en archivos).
-- **Lenguaje**: **TypeScript** estricto para máxima seguridad y escalabilidad.
-- **Estilos**: **NativeWind (Tailwind CSS)**. Diseño *Atomic Design* con un sistema de tokens visuales cálidos (Terracota/Melocotón).
-- **Estado global**: **Redux Toolkit** (`configureStore`, slices) y **redux-saga** (middleware para efectos secundarios y flujos asíncronos). La UI usa **react-redux** (`Provider`, `useAppSelector` / `useAppDispatch` definidos en `src/store/hooks.ts`).
-- **Visualización de datos**: **React Native Wagmi Charts** para gráficos médicos fluidos.
+- **Framework**: [Expo SDK 50+](https://expo.dev/) con **Expo Router** (Navegación basada en archivos).
+- **Lenguaje**: **TypeScript** Estricto para máxima seguridad y escalabilidad.
+- **Estilos**: **NativeWind (Tailwind CSS)**. Diseño "Atomic Design" con un sistema de tokens visuales cálidos (Terracota/Melocotón).
+- **Estado Global**: **Zustand**. Gestión de estado ligera, rápida y modular (`raftecStore`, `clinicalStore`).
+- **Visualización de Datos**: **React Native Wagmi Charts** para gráficos médicos hermosos y performantes de 60fps.
 - **Arquitectura**: **Atomic Design** (`/src/components/atoms`, `molecules`, `organisms`).
 
 ---
@@ -89,11 +89,6 @@ Sigue estos pasos para correr el proyecto localmente:
     - Escanea el código QR con la app **Expo Go** en tu dispositivo Android o iOS.
     - O presiona `i` para abrir el simulador de iOS / `a` para el emulador de Android.
 
-### Comprobaciones locales
-
-- **TypeScript**: `npm run typecheck`
-- **Tests (Jest + jest-expo)**: `npm test`
-
 ---
 
 ## 🎨 Diseño y UI
@@ -108,4 +103,4 @@ El diseño de Raftec prioriza la **calidez y la empatía**.
 
 ---
 
-> Hecho con ❤️ por Carlos Lira en honor a **Rafa**.
+> Hecho con ❤️ por Carlos de JesúsAlberto Lira en honor a mi sobrino **Rafael**.
