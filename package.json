@@ -11,12 +11,6 @@
     "test:watch": "jest --watch",
     "typecheck": "tsc --noEmit"
   },
-  "jest": {
-    "preset": "jest-expo",
-    "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@exponent/.*|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|moti|framer-motion)"
-    ]
-  },
   "dependencies": {
     "@expo-google-fonts/luckiest-guy": "^0.4.1",
     "@expo-google-fonts/plus-jakarta-sans": "^0.4.2",
